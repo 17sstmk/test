@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<?xml-stylesheet type="text/xsl" href="teacher.xsl"?>
+<teachers>
+
+<teacher tid="T001">
+   <username>a</username>
+   <basicinfo>
+      <truename>Tom</truename>
+      <sex>male</sex>
+      <position>leader</position>
+      <major>computer</major>
+   </basicinfo>  
+   <contact>
+      <fixed>
+         <office-place>101</office-place>
+         <office-phone>12345678</office-phone>
+      </fixed>
+      <moved>
+          <mobile-phone>17717498876</mobile-phone>
+          <email>asd1923@163.com</email>
+      </moved>
+   </contact>
+</teacher>
+
+<teacher tid="T002">
+   <username>b</username>
+   <basicinfo>
+      <truename>Sam</truename>
+      <sex>female</sex>
+      <position>professor</position>
+      <major>maths</major>
+   </basicinfo>  
+   <contact>
+      <fixed>
+         <office-place>102</office-place>
+         <office-phone>87654321</office-phone>
+      </fixed>
+      <moved>
+          <mobile-phone>13386057235</mobile-phone>
+          <email>215849912@qq.com</email>
+      </moved>
+   </contact>
+</teacher>
+
+
+</teachers>

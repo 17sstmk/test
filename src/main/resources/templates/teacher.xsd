@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+
+<xs:element name="teachers">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="teacher" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:unique name="tidUnique">
+<xs:selector xpath=".//teacher"/>
+<xs:field xpath="@tid"/>
+</xs:unique>
+
+</xs:element>
+
+ 
+<xs:element name="teacher">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="username" type="xs:string"/>
+<xs:element ref="basicinfo"/>
+<xs:element ref="contact"/>
+</xs:sequence>
+<xs:attribute name="tid" type="xs:string" use="required"/>
+</xs:complexType>
+
+</xs:element>
+
+
+
+<xs:element name="basicinfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="truename" type="xs:string"/>
+             <xs:element name="sex">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="male"/>
+                  <xs:enumeration value="female"/>
+                </xs:restriction>
+              </xs:simpleType>
+             </xs:element>
+<xs:element name="position" type="xs:string"/>
+<xs:element name="major" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>
+
+
+
+
+
+
+
+<xs:element name="contact">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="fixed"/>
+<xs:element ref="moved"/>
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>
+
+
+<xs:element name="fixed">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="office-place"/>
+<xs:element name="office-phone"/>
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>
+
+
+
+<xs:element name="moved">
+<xs:complexType>
+<xs:sequence>
+
+               <xs:element name="mobile-phone">
+                 <xs:simpleType>
+                   <xs:restriction base="xs:string">
+                       <xs:pattern value="1[3|4|5|7|8][0-9]\d{4,8}"/>
+                   </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+         <xs:element name="email">
+                <xs:simpleType>
+                   <xs:restriction base="xs:string">
+                       <xs:pattern value="[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){0,4}@(163.com|qq.com|126.com)"/>
+                   </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>
+
+
+
+
+
+
+       
+</xs:schema>

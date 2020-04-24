@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<students>
+
+<student>
+   <username>c</username>
+   <basicinfo>
+      <truename>Bob</truename>
+      <sex>male</sex>
+      <sno>17302010001</sno>
+      <birthday>1919-08-10</birthday>
+      <other>
+         <department>software</department>
+         <self-introduce>
+            <hobby>run</hobby>
+            <advantage>sleep</advantage>
+         </self-introduce>
+         <photo>1.jpg</photo>
+      </other>
+   </basicinfo>  
+   <contact>
+      <email>abcdefq@qq.com</email>
+      <telephone>18621987555</telephone>
+      <dormitory>A302</dormitory>
+   </contact>
+</student>
+
+<student>
+   <username>d</username>
+   <basicinfo>
+      <truename>Adda</truename>
+      <sex>female</sex>
+      <sno>17302010002</sno>
+      <birthday>2003-01-14</birthday>
+      <other>
+         <department>software</department>
+         <self-introduce>
+            <hobby>cook</hobby>
+            <advantage>read</advantage>
+         </self-introduce>
+         <photo>2.jpg</photo>
+      </other>
+   </basicinfo>  
+   <contact>
+      <email>grweq@163.com</email>
+      <telephone>17340491124</telephone>
+      <dormitory>B810</dormitory>
+   </contact>
+</student>
+
+
+   <student>
+      <username>e</username>
+      <basicinfo>
+         <truename>Edward</truename>
+         <sex>male</sex>
+         <sno>17302010003</sno>
+         <birthday>1899-08-01</birthday>
+         <other>
+            <department>alchemist</department>
+            <self-introduce>
+               <hobby>none</hobby>
+               <advantage>none</advantage>
+            </self-introduce>
+            <photo>3.jpg</photo>
+         </other>
+      </basicinfo>
+      <contact>
+         <email>zhang32@163.com</email>
+         <telephone>13850397425</telephone>
+         <dormitory>C406</dormitory>
+      </contact>
+   </student>
+
+</students>
